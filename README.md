@@ -72,6 +72,26 @@ cat nomedoarquivo.extensão
 cat -n nomedoarquivo.extensao (retorna o conteúdo das linhas no arquivo)
 ```
 
+## cp
+
+- Copiar texto de um arquivo para o outro.
+
+```
+cp mensagem.txt bemvindo.txt (copiando texto de mensagem.txt para bemvindo.txt)
+cp -r projetos-java projetos-c# (copiando todos os arquivos de um diretório)
+```
+
+## mv
+
+- Renomear arquivo ou mover para outro diretório.
+
+```
+mv arquivo1 arquivo2 (renomeando)
+mv arquivo1 /tmp (movendo repositório)
+mv arquivo1 ../
+mv bemvindo.txt projetos-java/bemvindo-novo-nome.txt (jogando arquivo para outro diretorio e renomeando)
+```
+
 ## clear
 
 - Usado para limpar o terminal
