@@ -100,13 +100,48 @@ mv bemvindo.txt projetos-java/bemvindo-novo-nome.txt (jogando arquivo para outro
 clear
 ```
 
+## touch
+
+- Usado para criar arquivos
+
+```
+touch nomearquivo.extensao
+touch file_name1.txt file_name2.txt file_name3.txt (multiplos arquivos)
+```
+
+- Também é usado para alterar a hora dos arquivos.
+
+```
+touch -a file_name.txt (alterando a hora de acesso para hora atual)
+touch -m file_name1.txt (hora de modificação de um arquivo)
+touch -am file_name1.txt (acesso e modificação juntos, a (access) m (modification))
+touch -c file_name.txt (modificar hora de acesso sem criar novo arquivo)
+```
+
+- Sendo específico com a hora do arquivo
+
+```
+touch -t 201903081047.30 file_name.txt
+
+O formato da hora específica é definido pelo padrão CCYYMMDDhhmm.ss, em que:
+
+CC – Os dois primeiros dígitos do ano.
+YY – Os dois dígitos subsequentes do ano.
+MM – O mês do ano [01-12].
+DD – O dia do mês [01-31].
+hh – A hora do dia [ 00-23].
+mm – O minuto da hora [00-59].
+ss – O segundo do minuto [00-59].
+```
+
 ## zip
 
 - Usado para compactar arquivos.
 
 ```
-zip -r nomedoarquivocriado.zip diretorio/
+zip -r nomedoarquivocriado.zip diretorio/ (caso n esteja dentro do diretorio atual)
 zip -rq nomedoarquivo.zip diretorio/ (compactar sem gerar log)
+zip bemvindo.zip *.txt (seja possível compactar todos os arquivos com extensão .txt que estão dentro do diretório)
 ```
 
 ## unzip
