@@ -154,6 +154,32 @@ unzip -l nomedoarquivo.zip (serve para visualizar o que tem dentro do arquivo zi
 unzip -q nomedoarquivo.zip (serve para descompactar sem ficar enchendo as linhas)
 ```
 
+# tar
+
+- Tar é uma extensão de compactação muito mais convencional de se utilizar.
+
+```
+tar -cz diretorio > work.tar.gz (-c será compactado, -z pelo tipo zip. O ">" indica saída de dados.)
+```
+
+- Para descompactar tar
+
+```
+tar -xz < work.tar.gz ("<" indica entrada de dados, -x indica "extract" )
+```
+
+- Podemos fazer sem redirecionamento! (< ou >)
+
+```
+tar -czf work.tar.gz workspace/ (com acréscimo do -f)
+```
+
+- O comando tar não é verborrágico, ele não gera logs, então ao invés do zip que tamos que passar -q para não gerar logs, aqui temos que passar para GERAR.
+
+```
+tar -vxzf work.tar.gz (-v)
+```
+
 # Caracteres coringas
 
 ## \*
