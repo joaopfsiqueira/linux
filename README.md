@@ -7,6 +7,7 @@
 ```
 ps (apenas os que foram executados no terminal em questao)
 ps -e (todos os arquivos de todos os terminais)
+ps -ef (todos os arquivos de todos os terminais, todas as informações possíveis)
 ```
 
 ## kill
@@ -24,4 +25,6 @@ kill -9 idDoProcesso (para de vez)
 
 ```
 ps -ef | grep firefox (comando vai sinalizar todos os processos e seus ids que contem a palavra firefox)
+
+cat google.txt | grep "Larry Page and Sergey Brin" (imprimindo todas as linhas que contem a frase em questao de dentro do arquivo google.txt)
 ```
