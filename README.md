@@ -100,6 +100,16 @@ mv bemvindo.txt projetos-java/bemvindo-novo-nome.txt (jogando arquivo para outro
 clear
 ```
 
+## date
+
+- Usado para ver a hora atual do linux
+
+```
+date
+date --help (traz todas as formas de formatação do date)
+date "+%d de %B de %Y" (exemplo de formatação)
+```
+
 ## touch
 
 - Usado para criar arquivos
