@@ -230,3 +230,23 @@ tail -n 3 nomedoarquivo.txt (pegando só as ultimas 3)
 ```
 less nomedoarquivo.txt
 ```
+
+# Edicação de arquivo pelo terminal
+
+## vi
+
+- Usado para editar arquivos pelo terminal.
+
+```
+vi google.txt
+
+O texto do arquivo aparece para nós e podemos navegar por ele utilizando as setas do teclado. Para sairmos do modo de navegação e entrarmos no modo de inclusão, apertamos a tecla i, assim podemos inserir textos no arquivo exatamente no lugar onde pressionamos o i. Para voltarmos à navegação e saírmos do modo de inclusão, pressionamos a tecla ESC. Para salvarmos essas alterações usamos o comando :w e para sair do VI, digitamos :q.
+
+
+
+Sabemos como inserir texto, mas e para excluir? Para excluir caracteres usamos a tecla x, ela funciona como o delete do teclado. Porém esse comando tem algo diferente: se digitarmos o número de caracteres que queremos apagar e logo depois a tecla x, serão apagados a quantidade digitada, é como se tivéssemos apertado o x várias vezes, algo como 11 x, apagará 11 caracteres de texto. O x já ajuda bastante, mas caso queiramos excluir uma linha inteira, ele pode não ajudar muito, porém, para deletarmos uma linha inteira podemos simplesmente digitar a tecla d duas vezes (dd), digitar uma quantidade antes do dd funciona da mesma forma que no comando x.
+
+Tente sair do editor sem salvar o arquivo. Dará erro, isso porque temos que salvar o arquivo para podermos sair. Podemos juntar os comandos de salvar e sair em apenas um comando: :wq. Se quisermos sair sem salvar, precisamos usar o comando :q!.
+
+Vimos bastantes comandos do VI até aqui, mas todos eles são teclas de letras em minúsculo, isso porque letras em maiúsculas possuem um comportamento diferente, o A (shift + a) por exemplo, também é um comando para edição de texto, mas ao contrário da i e a, o A insere texto no final da linha atual.
+```
