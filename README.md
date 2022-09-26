@@ -112,6 +112,7 @@ touch file_name1.txt file_name2.txt file_name3.txt (multiplos arquivos)
 - Também é usado para alterar a hora dos arquivos.
 
 ```
+touch file_name.txt
 touch -a file_name.txt (alterando a hora de acesso para hora atual)
 touch -m file_name1.txt (hora de modificação de um arquivo)
 touch -am file_name1.txt (acesso e modificação juntos, a (access) m (modification))
@@ -172,6 +173,7 @@ tar -xz < work.tar.gz ("<" indica entrada de dados, -x indica "extract" )
 
 ```
 tar -czf work.tar.gz workspace/ (com acréscimo do -f)
+tar -xf work.tar.gz workspace/ (com acréscimo do -f, descompactando)
 ```
 
 - O comando tar não é verborrágico, ele não gera logs, então ao invés do zip que tamos que passar -q para não gerar logs, aqui temos que passar para GERAR.
