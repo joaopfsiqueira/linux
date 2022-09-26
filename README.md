@@ -100,6 +100,25 @@ mv bemvindo.txt projetos-java/bemvindo-novo-nome.txt (jogando arquivo para outro
 clear
 ```
 
+## zip
+
+- Usado para compactar arquivos.
+
+```
+zip -r nomedoarquivocriado.zip diretorio/
+zip -rq nomedoarquivo.zip diretorio/ (compactar sem gerar log)
+```
+
+## unzip
+
+- Usado para descompactar arquivos.
+
+```
+unzip nomedoarquivocriado.zip
+unzip -l nomedoarquivo.zip (serve para visualizar o que tem dentro do arquivo zip)
+unzip -q nomedoarquivo.zip (serve para descompactar sem ficar enchendo as linhas)
+```
+
 # Caracteres coringas
 
 ## \*
