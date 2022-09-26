@@ -202,3 +202,31 @@ O exemplo executa todos os arquivos com o nome de arquivo no inicio.
 ```
 cat arquivo*.txt
 ```
+
+# Leitura de arquivos
+
+## head
+
+- Comando utilizado para ler só as primeiras 10 linhas de um arquivo.
+
+```
+head nomedoarquivo.txt
+head -n 3 nomedoarquivo.txt (especificando o número de linhas com -n)
+```
+
+## tail
+
+- Comando utilizado para ler só as últimas 10 linhas de um arquivo.
+
+```
+tail nomedoarquivo.txt
+tail -n 3 nomedoarquivo.txt (pegando só as ultimas 3)
+```
+
+## less
+
+- Comando utilizado para abrir o arquivo, com a seta do teclado eu vou retornando linha por linha
+
+```
+less nomedoarquivo.txt
+```
