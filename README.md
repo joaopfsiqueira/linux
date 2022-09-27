@@ -10,6 +10,38 @@ ps -e (todos os arquivos de todos os terminais)
 ps -ef (todos os arquivos de todos os terminais, todas as informações possíveis)
 ```
 
+## pstree
+
+- Comando utilizado para visualizar os processos que estão em forma de árvore.
+
+```
+pstree
+```
+
+## jobs
+
+- Comando utilizado para visualizar os processos que estão parados!
+
+```
+jobs
+```
+
+## bg
+
+- Comando utilizado para jogar um processo que estava parado devolva ao background.
+
+```
+bg 1 (id do processo dentro de jobs)
+```
+
+## fg
+
+- Comando utilizado para jogar um processo ao foreground, travando o dash com a execução dele
+
+```
+fg 1 (id do processo dentro de jobs)
+```
+
 ## kill
 
 - Serve para forçar a parada de determinados processos.
@@ -43,5 +75,5 @@ ps -ef | grep top
 
 ```
 killall top
-killall -9 top (para de vez)
+killall -9 top (garantir que vai parar de vez)
 ```
