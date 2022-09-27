@@ -77,3 +77,47 @@ ps -ef | grep top
 killall top
 killall -9 top (garantir que vai parar de vez)
 ```
+
+## gedit
+
+- Criar arquivo script.
+
+```
+gedit nomedoArquivo &
+```
+
+## sh
+
+- Serve para executar SCRIPTS, sem precisar fechar e abrir o terminal caso tenha acabo de criar um arquivo.
+
+```
+sh nomedoarquivo
+```
+
+## ./nomedoarquivo
+
+- Executar arquivos. Só é possível se o usuário em questão tiver permissões para execução.
+
+```
+./dorme
+```
+
+# Permissões
+
+```
+Os arquivos no Linux podem ter permissões para leitura (r), escrita (w) e execução (x). Essas permissões são distribuídas para o dono do arquivo, ao grupo de usuários e também para outros usuários.
+
+se rodarmos ls -l podemos ver todos os arquivos e suas permissões ao lado esquerdo, "d" sempre representa que é o dono do arquivo e dps vem as suas permissões.
+
+as primeiras letras depois do - traço define as permissões que o DONO do arquivo tem. depois do segundo - as pemissões que o GRUPO tem e por fim, as permissões que vem depois do terceiro - é as permissões dos outros usuários
+```
+
+## chmod
+
+- Comando utilizado para alterar as permissões em um determinado arquivo ou pasta.
+
+```
+chmod +x dorme (dando permissão de execução ao arquivo dorme para todos os usuários +x)
+chmod +r dorme (dando permissão de read, leitura, ao arquivo dorme para todos os usuários +r)
+chmod +w dorme (dando permissão de write, escrita ao arquivo dorme para todos os usuários +w)
+```
