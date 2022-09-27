@@ -28,3 +28,20 @@ ps -ef | grep firefox (comando vai sinalizar todos os processos e seus ids que c
 
 cat google.txt | grep "Larry Page and Sergey Brin" (imprimindo todas as linhas que contem a frase em questao de dentro do arquivo google.txt)
 ```
+
+## top
+
+- Serve para listar com o ps e o greg os processos que mais estão consumindo CPU.
+
+```
+ps -ef | grep top
+```
+
+## killall
+
+- Serve para encerrar todos os processos do mesmo programa, ou seja, com o mesmo NOME, sem o id
+
+```
+killall top
+killall -9 top (para de vez)
+```
