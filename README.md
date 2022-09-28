@@ -229,3 +229,12 @@ apt-cache search something(comando que serve para fazer pesquisa dos pacotes que
 sudo dpkg -i programabaixado.deb (-i de install)
 sudo dpkg -r google-chrome-stable (removendo pacote)
 ```
+
+## service stop / start
+
+- Comando utilizado que pega um serviço e para.
+
+```
+sudo service nomedoserviço stop
+sudo service nomedoserviço start
+```
