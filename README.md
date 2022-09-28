@@ -140,3 +140,39 @@ locate firefox
 ```
 sudo updatedb
 ```
+
+## which
+
+- Procura qual é o arquivo que eu vou executar se eu usar tal comando. Retornando a pasta do arquivo
+
+```
+which firefox
+```
+
+# Usuário
+
+## sudo
+
+- Serve para executar determinada ação como se o usuário atual fosse o usuário root
+
+```
+sudo mv arquivo /diretorio
+sudo apt-get install
+```
+
+## passwd
+
+- Serve para mudar a senha do usuário atual.
+
+```
+passwd
+sudo passwd (configura senha para o usuário root)
+```
+
+## su
+
+- Comando utilizado para trocar de usuário.
+
+```
+su nomedousuario
+```
