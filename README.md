@@ -215,6 +215,17 @@ PATH=$PATH:/diretoriodoarquivo
 
 ```
 sudo apt-get update
-apt-cache search something(comando que serve para fazer pesquisa dos pacotes que existem.)
 sudo apt-get install nomeDoPacote
+
+apt-cache search something(comando que serve para fazer pesquisa dos pacotes que existem.)
+```
+
+## dpkg
+
+- Comando que serve para instalar pacotes que não sejam através do apt.
+- Para isso, precisamos baixar a versão deb do pacote e depois rodar
+
+```
+sudo dpkg -i programabaixado.deb (-i de install)
+sudo dpkg -r google-chrome-stable (removendo pacote)
 ```
