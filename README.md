@@ -121,3 +121,22 @@ chmod +x dorme (dando permissão de execução ao arquivo dorme para todos os us
 chmod +r dorme (dando permissão de read, leitura, ao arquivo dorme para todos os usuários +r)
 chmod +w dorme (dando permissão de write, escrita ao arquivo dorme para todos os usuários +w)
 ```
+
+## locate
+
+- Serve para localizar determinado arquivo.
+
+```
+locate firefox
+```
+
+- O locate é rápido pq o linux armazena as localizações em um db.
+- Caso tenhamos adicionado um novo arquivo e ele ainda não exista no db, devemos rodar:
+
+## updatedb
+
+- Serve para atualizar o db do linux
+
+```
+sudo updatedb
+```
