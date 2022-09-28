@@ -185,3 +185,24 @@ su nomedousuario
 ```
 adduser nomeusuario
 ```
+
+# Variáveis de ambiente
+
+## env
+
+- Comando utilizado para listar todas as variáveis de ambiente!
+
+```
+env
+env | grep path (dando um destaque só para env path)
+```
+
+## PATH
+
+- Usado para criar uma nova variável que utiliza path.
+
+```
+PATH=$PATH:/diretoriodoarquivo
+```
+
+- Com esse comando, eu deixo de precisar estar dentro de um determinado diretório para rodar determinado arquivo.
