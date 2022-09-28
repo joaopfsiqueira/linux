@@ -238,3 +238,15 @@ sudo dpkg -r google-chrome-stable (removendo pacote)
 sudo service nomedoserviço stop
 sudo service nomedoserviço start
 ```
+
+# Acessando servidor remoto linux
+
+- Para conectar, vamos usar o ssh! Temos acesso pelo terminal.
+
+```
+sudo apt-get install ssh (instalando tanto o cliente como o servidor)
+
+ssh usuarioQueVaiLogar@endereçoDaMaquina(exemplo: ssh joao@localhost)
+
+ssh -X jose@localhost (o -X diz que tudo o que acontecer no servidor fora do terminal, vai acontecer tbm na minha máquina.)
+```
