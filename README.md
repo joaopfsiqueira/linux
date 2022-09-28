@@ -120,6 +120,7 @@ as primeiras letras depois do - traço define as permissões que o DONO do arqui
 chmod +x dorme (dando permissão de execução ao arquivo dorme para todos os usuários +x)
 chmod +r dorme (dando permissão de read, leitura, ao arquivo dorme para todos os usuários +r)
 chmod +w dorme (dando permissão de write, escrita ao arquivo dorme para todos os usuários +w)
+chmod g+w nico/ (permissão de write para o GRUPO (g))
 ```
 
 ## locate
@@ -175,4 +176,12 @@ sudo passwd (configura senha para o usuário root)
 
 ```
 su nomedousuario
+```
+
+## adduser
+
+- Serve para adicionar novos usuários
+
+```
+adduser nomeusuario
 ```
