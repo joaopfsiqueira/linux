@@ -206,3 +206,15 @@ PATH=$PATH:/diretoriodoarquivo
 ```
 
 - Com esse comando, eu deixo de precisar estar dentro de um determinado diretório para rodar determinado arquivo.
+
+# Instalação de programas
+
+## apt
+
+- apt é um comando usado para instalar pacotes.
+
+```
+sudo apt-get update
+apt-cache search something(comando que serve para fazer pesquisa dos pacotes que existem.)
+sudo apt-get install nomeDoPacote
+```
