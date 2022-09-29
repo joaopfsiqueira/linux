@@ -16,6 +16,12 @@ pwd
 whoami
 ```
 
+## Listando todos os usuários
+
+```
+sudo cat /etc/passwd
+```
+
 ## ls
 
 - Usado para listar os arquivos no diretório atual.
