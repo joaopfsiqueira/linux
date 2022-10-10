@@ -85,6 +85,30 @@ docker rm idcontainer
 docker rm idcontainer --force (vai forçar a exclusão caso esteja rodando)
 ```
 
+### docker images
+
+- Usado para ver as imagens baixadas no sistema.
+
+```
+docker images
+```
+
+### docker inspect
+
+- Usado para inspecionar uma imagem
+
+```
+docker inspect idimagem
+```
+
+### docker history
+
+- Usado para ver o histórico de alterações da imagem em questão. Mostrando todas as camadas que formam a imagem principal.
+
+```
+docker history idimagem
+```
+
 ### -d
 
 - -d é um comando utilizado para manter algo em execução e não bloquear o terminal. -d = detached
