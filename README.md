@@ -41,3 +41,19 @@ docker container ls -a (mostra todos os containers em execução ou não)
 ```
 docker stop idcontainer (esse id é achado no comando ps ou ls)
 ```
+
+### docker start
+
+- Usado para dar um start em um container parado.
+
+```
+docker start idcontainer (esse id é achado no comando ps ou ls)
+```
+
+### docker exec
+
+- Usado para executar um container em modo interativo.
+
+```
+docker exec -it idcontainer bash (vai rodar o container em modo bash, no terminal, usado para usar comandos dentro do docker.)
+```
