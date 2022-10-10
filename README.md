@@ -42,6 +42,22 @@ docker container ls -a (mostra todos os containers em execução ou não)
 docker stop idcontainer (esse id é achado no comando ps ou ls)
 ```
 
+### docker pause
+
+- Usado para pausar um container
+
+```
+docker pause idcontainer (esse id é achado no comando ps ou ls)
+```
+
+### docker unpause
+
+- Usado para despausar um container
+
+```
+docker unpause idcontainer (esse id é achado no comando ps ou ls)
+```
+
 ### docker start
 
 - Usado para dar um start em um container parado.
@@ -57,3 +73,7 @@ docker start idcontainer (esse id é achado no comando ps ou ls)
 ```
 docker exec -it idcontainer bash (vai rodar o container em modo bash, no terminal, usado para usar comandos dentro do docker.)
 ```
+
+### top
+
+- Usado para ver as árvores de processos, geralmente usado dentro de um container.
