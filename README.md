@@ -2,7 +2,17 @@
 
 # Exemplo de Dockerfile
 
-- Docker file com explicação:
+- Docker file com explicação: **[Dockerfile](https://github.com/joaopfsiqueira/linux/blob/docker/Dockerfile)**
+
+- Documentação oficial dockerfile: **[Documentação](https://docs.docker.com/engine/reference/builder/)**
+
+## docker build
+
+- Serve para criar imagem que o docker file acima estruturou.
+
+```
+docker build -t nomedaImagem:versao localDoDockerFile(joaopfsiqueira/app-node:1.0 .) (o ponto é para especificar o caminho, no caso o repositório atual, caso esteja rodando o comando dentro da pasta onde se encontra o docker file.)
+```
 
 ## Docker
 
