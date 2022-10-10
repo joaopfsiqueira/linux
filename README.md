@@ -21,7 +21,7 @@ docker run hello-world sleep 1d(o comando sleep é um comando que diz que o proc
 - Vai mostrar os containeres em executação ou não
 
 ```
-docker container ps
+docker ps
 docker container ps -a
 ```
 
@@ -30,6 +30,14 @@ docker container ps -a
 - Vai mostrar os containeres em executação ou não, igual ao ps só que mais verboso.
 
 ```
-docker container ls
+docker ls
 docker container ls -a (mostra todos os containers em execução ou não)
+```
+
+### docker stop
+
+- Usado para parar um container
+
+```
+docker stop idcontainer (esse id é achado no comando ps ou ls)
 ```
