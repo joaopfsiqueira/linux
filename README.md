@@ -183,4 +183,6 @@ docker run -d -P dockersanples/static-site (nesse exemplo, estamos usando -d par
 
 ```
 docker run -d -p 8080:80 dockersanples/static-site (aqui ele informa que a porta 8080 da minha máquina reflita na porta 80 do container)
+
+docker container ls -q (jeito de retornar as portas)
 ```
