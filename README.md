@@ -17,6 +17,10 @@ docker images
 docker run -p 8080:3000(portaOndeVaiRodarAplicação, express ou não) repositoryImagemCriada(retorna no docker images)
 ```
 
+### Informações pertinentes sobre o Dockerfile.
+
+- A instrução ARG carrega variáveis apenas no momento de build da imagem, enquanto a instrução ENV carrega variáveis que serão utilizadas no container.
+
 ## Docker
 
 - Comandos que serão usados em um docker
@@ -159,7 +163,7 @@ docker history idimagem
 
 ## Ports
 
-- Quando executamos um container com algo dentro, geralmente vinculamos uma porta nele. Isso não quer dizer que essa porta vai ficar acessível fora do nosso container, sendo necessário EXPOR essa porta para acesso externos, mesmo dentro de um container em wsl e você tentando acessar pelo navegador do windows.
+- Quando executamos um container com algo dentro, geralmente vinculamos uma porta nele. Isso não quer dizer que essa porta vai ficar acessível fora do nosso container, sendo necessário EXPOR essa porta para acesso externos, mesmo dentro de um container em wsl e você tentando acessar pelo navegador do windows. Muitas vezes a porta em que o container está rodando é definidido dentro do dockerfile.
 
 ### port
 
