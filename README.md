@@ -85,6 +85,27 @@ docker rm idcontainer
 docker rm idcontainer --force (vai forçar a exclusão caso esteja rodando)
 ```
 
+### -d
+
+- -d é um comando utilizado para manter algo em execução e não bloquear o terminal. -d = detached
+
+```
+docker run -d hello-world
+docker compose up -d
+```
+
+### top
+
+- Usado para ver as árvores de processos, geralmente usado dentro de um container.
+
+# Observações
+
+## Images
+
+- Todas as imagens tem diversas camadas que formam uma única. E todas elas, quando baixamos, vem no modo RO, read only.
+
+- Beleza, mas então como a gente consegue criar algo dentro dessa imagem através de um container? É simples! Como mencionado acima, imagem é um conjunto de camadas e quando baixamos uma imagem, uma nova camada acima das outras é criada, permitindo o uso das camadas que ficam abaixo e criando uma nova que é R/W read and write.
+
 ### docker images
 
 - Usado para ver as imagens baixadas no sistema.
@@ -108,21 +129,6 @@ docker inspect idimagem
 ```
 docker history idimagem
 ```
-
-### -d
-
-- -d é um comando utilizado para manter algo em execução e não bloquear o terminal. -d = detached
-
-```
-docker run -d hello-world
-docker compose up -d
-```
-
-### top
-
-- Usado para ver as árvores de processos, geralmente usado dentro de um container.
-
-# Observações
 
 ## Ports
 
