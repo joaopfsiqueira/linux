@@ -1,4 +1,8 @@
-# Repositório criado para prática e listagem de comandos LINUX.
+# Repositório criado para prática e listagem de comandos docker.
+
+# Exemplo de Dockerfile
+
+- Docker file com explicação:
 
 ## Docker
 
