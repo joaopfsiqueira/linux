@@ -87,7 +87,7 @@ docker rm idcontainer --force (vai forçar a exclusão caso esteja rodando)
 
 ### -d
 
-- -d é um comando utilizado para manter algo em execução e não bloquear o terminal.
+- -d é um comando utilizado para manter algo em execução e não bloquear o terminal. -d = detached
 
 ```
 docker run -d hello-world
@@ -104,4 +104,26 @@ docker compose up -d
 
 - Quando executamos um container com algo dentro, geralmente vinculamos uma porta nele. Isso não quer dizer que essa porta vai ficar acessível fora do nosso container, sendo necessário EXPOR essa porta para acesso externos, mesmo dentro de um container em wsl e você tentando acessar pelo navegador do windows.
 
-###
+### port
+
+- Usado para mapear como está o funcionamento de portas de um container em relação ao host.
+
+```
+docker port idcontainer
+```
+
+### -P (maísculo)
+
+- Usado para tornar acessível o container através de uma porta pelo host. Resolvendo o problema da observação acima.
+
+```
+docker run -d -P dockersanples/static-site (nesse exemplo, estamos usando -d para detached e o -p que vai tornar portas padrões 80 e 443 acessíveis fora do container. Depois é só rodar o comando docker port idcontainer para ver as portas abertas e o host. se estiver rodando dentro da wsl localhost:80, se tiver fora basta passar o ip:porta (acho que funciona))
+```
+
+### -p (minusculo)
+
+- Usado para apontar qual porta da minha máquina vai refletir na porta do container.
+
+```
+docker run -d -p 8080:80 dockersanples/static-site (aqui ele informa que a porta 8080 da minha máquina reflita na porta 80 do container)
+```
