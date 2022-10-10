@@ -82,8 +82,26 @@ docker exec -it idcontainer bash (vai rodar o container em modo bash, no termina
 
 ```
 docker rm idcontainer
+docker rm idcontainer --force (vai forçar a exclusão caso esteja rodando)
+```
+
+### -d
+
+- -d é um comando utilizado para manter algo em execução e não bloquear o terminal.
+
+```
+docker run -d hello-world
+docker compose up -d
 ```
 
 ### top
 
 - Usado para ver as árvores de processos, geralmente usado dentro de um container.
+
+# Observações
+
+## Ports
+
+- Quando executamos um container com algo dentro, geralmente vinculamos uma porta nele. Isso não quer dizer que essa porta vai ficar acessível fora do nosso container, sendo necessário EXPOR essa porta para acesso externos, mesmo dentro de um container em wsl e você tentando acessar pelo navegador do windows.
+
+###
