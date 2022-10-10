@@ -12,6 +12,9 @@
 
 ```
 docker build -t nomedaImagem:versao localDoDockerFile(joaopfsiqueira/app-node:1.0 .) (o ponto é para especificar o caminho, no caso o repositório atual, caso esteja rodando o comando dentro da pasta onde se encontra o docker file.)
+
+docker images
+docker run -p 8080:3000(portaOndeVaiRodarAplicação, express ou não) repositoryImagemCriada(retorna no docker images)
 ```
 
 ## Docker
@@ -111,6 +114,16 @@ docker compose up -d
 ### top
 
 - Usado para ver as árvores de processos, geralmente usado dentro de um container.
+
+# Executando comandos ao mesmo tempo.
+
+- É possível utilizar um único comando que faça várias coisas, como por exemplo:
+
+```
+docker stop $(docker container ls -q)
+```
+
+Esse comando vai parar os containeres e depois vai listar todos os containeres mas só o id de cada um. Por conta do comando -q (quiet)
 
 # Observações
 
