@@ -259,3 +259,11 @@ Tente sair do editor sem salvar o arquivo. Dará erro, isso porque temos que sal
 
 Vimos bastantes comandos do VI até aqui, mas todos eles são teclas de letras em minúsculo, isso porque letras em maiúsculas possuem um comportamento diferente, o A (shift + a) por exemplo, também é um comando para edição de texto, mas ao contrário da i e a, o A insere texto no final da linha atual.
 ```
+
+## sudo
+
+- Por padrão o usuário root vem desabilitado, para habilitar basta executar o comando:
+
+```
+sudo -i
+```
