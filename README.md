@@ -16,6 +16,14 @@ pwd
 whoami
 ```
 
+## hostname
+
+- Utilizado para descobrir o hostname
+
+```
+hostname
+```
+
 ## ls
 
 - Usado para listar os arquivos no diretório atual.
