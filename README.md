@@ -16,6 +16,16 @@ pwd
 whoami
 ```
 
+## usermod
+
+- Caso queira dar permissão sudo para um usuário, rode o seguinte comando:
+
+```
+sudo usermod -a -G sudo nomeUsuario
+```
+
+- Isso faz com que não seja mais necessário usar o sudo na frente do usuário que não seja root.
+
 ## hostname
 
 - Utilizado para descobrir o hostname
