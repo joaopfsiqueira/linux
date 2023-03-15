@@ -129,6 +129,15 @@ date --help (traz todas as formas de formatação do date)
 date "+%d de %B de %Y" (exemplo de formatação)
 ```
 
+## readlink
+
+- Usado para pegar o path de um arquivo ou algo do tipo.
+
+```
+readlink -f nomedoarquivo
+```
+
+
 ## touch
 
 - Usado para criar arquivos
